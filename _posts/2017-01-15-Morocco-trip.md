@@ -4,9 +4,10 @@ title: My Trip to Morocco
 description: All about Morocco
 featured_image: /assets/img/IMG_3294.jpg
 categories:
-  - Morocco
   - Food
   - Lifestyle
+  - Morocco
+  - Africa
 ---
 
 

@@ -4,16 +4,26 @@ layout: default
 
 <section class="grid">
 
-    {% for post in page.posts %}
+  <h2 class="titles col-12 center margin-top-l margin-bottom-xl">{{page.title}}</h2>
+
+    {% for post in site.categories[page.title] %}
       <article class="col-4">
         <img src="{{post.featured_image}}" class="image-profile margin-top margin-bottom"/>
+        {% if post.categories[0] != 'Highlight' %}
         <a href="/category/{{post.categories[0]}}" class="tag">{{post.categories[0]}}</a>
+        {%endif%}
+        {% if post.categories[1] != 'Highlight' %}
         <a href="/category/{{post.categories[1]}}" class="tag">{{post.categories[1]}}</a>
+        {%endif%}
+        {% if post.categories[2] != 'Highlight' %}
         <a href="/category/{{post.categories[2]}}" class="tag">{{post.categories[2]}}</a>
-        <a href="/category/{{post.categories[2]}}" class="tag">{{post.categories[2]}}</a>
+        {%endif%}
+        {% if post.categories[3] != 'Highlight' %}
+        <a href="/category/{{post.categories[3]}}" class="tag">{{post.categories[3]}}</a>
+        {%endif%}
         <div class="article-text">
           <h2>{{post.title}}</h2>
-          <p> {{ page.date | date: "%B %-d, %Y"}} </p>
+          <p> {{ post.date | date: "%B %-d, %Y"}} </p>
           <p class="margin-top margin-bottom">{{post.excerpt}}</p>
           <a class="button-article-highlight margin-top" href="{{post.url}}">Continue reading</a>
         </div>

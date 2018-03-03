@@ -6,6 +6,9 @@ featured_image: /assets/img/bg1.jpg
 categories:
   - Travel
   - Food
+  - Spain
+  - Europe
+  - Traveltips
 ---
 
 

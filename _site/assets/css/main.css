@@ -27,6 +27,10 @@ img {
   margin-top: 1rem;
 }
 
+.margin-top-s {
+  margin-top: .8rem;
+}
+
 .margin-top-l {
   margin-top: 3rem;
 }
@@ -39,8 +43,8 @@ img {
   margin-bottom: 1.4rem;
 }
 
-.margin-top-s {
-  margin-top: .8rem;
+.margin-bottom-xl {
+  margin-top: 3rem;
 }
 
 .margin-left {
@@ -87,10 +91,6 @@ section {
   padding: 0 5%;
 }
 
-.blog-post-title {
-  min-height: 4.6rem;
-}
-
 /*----Typography----*/
 
 h1 {
@@ -115,6 +115,7 @@ h3 {
   color: #A8A8A8;
   font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   margin-bottom: 6rem;
 }
 
@@ -139,7 +140,7 @@ a {
   font-family: 'Roboto', sans-serif;
 }
 
-time {
+.post-preview-date {
   color: #585858;
   font-family: 'Roboto', sans-serif;
   font-size: .85rem;
@@ -152,11 +153,12 @@ time {
   background-image: url("../img/bg1.jpg");
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
 }
 
 #slideshow hr {
   height: 2px;
-  background-color: green;
+  background-color: white;
   width: 80px;
   outline: none;
   border: none;
@@ -419,3 +421,13 @@ footer .fa-instagram {
 }
 
 /*----------Home Page Styles----------*/
+
+.titles {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.post {
+
+}

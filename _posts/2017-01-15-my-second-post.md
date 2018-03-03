@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Second post
+title: 3-Days in Munich
 description: My first post
 featured_image: /assets/img/IMG_3294.jpg
 categories:
   - Food
   - Lifestyle
   - Highlight
+  - Germany
+  - Europe
 ---
 
 

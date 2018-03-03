@@ -2,11 +2,10 @@
 layout: default
 ---
 
-<h2>
+<section class="post margin-top-l margin-bottom-xl">
+  <h2>{{post.title}}</h2>
+  <p> {{ post.date | date: "%B %-d, %Y"}} </p>
 
-
-<section class="grid">
-  <div class="col-6">
     {{content}}
-  </div>
+
 </section>

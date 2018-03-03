@@ -22,18 +22,18 @@ layout: default
         {% for post in site.posts limit:6 %}
           <article class="col-6">
             <img src="{{post.featured_image}}" class="image-profile margin-top-l margin-bottom"/>
-             {% if post.categories[0] != 'Highlight' %}
+          {% if post.categories[0] != 'Highlight' %}
             <a href="/category/{{post.categories[0]}}" class="tag">{{post.categories[0]}}</a>
-              {%endif%}
-              {% if post.categories[1] != 'Highlight' %}
+          {%endif%}
+          {% if post.categories[1] != 'Highlight' %}
             <a href="/category/{{post.categories[1]}}" class="tag">{{post.categories[1]}}</a>
-              {%endif%}
-            {% if post.categories[2] != 'Highlight' %}
+          {%endif%}
+          {% if post.categories[2] != 'Highlight' %}
             <a href="/category/{{post.categories[2]}}" class="tag">{{post.categories[2]}}</a>
-              {%endif%}
+          {%endif%}
             <div class="article-text">
               <h2 class="blog-post-title">{{post.title}}</h2>
-              <p> {{ page.date | date: "%B %-d, %Y"}} </p>
+              <p class="post-preview-date margin-bottom">{{ post.date | date: "%B %-d, %Y"}}</p>
               <p class="margin-top margin-bottom">{{post.excerpt | truncatewords: 20}}</p>
               <a class="button-article margin-top" href="{{post.url}}">Continue reading</a>
             </div>
@@ -74,20 +74,22 @@ layout: default
       </div>
       <article class="col-12 grid padding-2">
         {% for post in site.categories.Highlight limit:3 %}
-          <article class="col-4">
-            <img src="{{post.featured_image}}" class="image-profile margin-top margin-bottom"/>
+          <article class="col-4 grid">
+            <div class="col-12-top">
+              <img src="{{post.featured_image}}" class="image-profile margin-top margin-bottom"/>
               {% if post.categories[0] != 'Highlight' %}
-            <a href="/category/{{post.categories[0]}}" class="tag">{{post.categories[0]}}</a>
+                <a href="/category/{{post.categories[0]}}" class="tag">{{post.categories[0]}}</a>
               {%endif%}
               {% if post.categories[1] != 'Highlight' %}
-            <a href="/category/{{post.categories[1]}}" class="tag">{{post.categories[1]}}</a>
+                <a href="/category/{{post.categories[1]}}" class="tag">{{post.categories[1]}}</a>
               {%endif%}
-            {% if post.categories[2] != 'Highlight' %}
-            <a href="/category/{{post.categories[2]}}" class="tag">{{post.categories[2]}}</a>
+              {% if post.categories[2] != 'Highlight' %}
+                <a href="/category/{{post.categories[2]}}" class="tag">{{post.categories[2]}}</a>
               {%endif%}
-            <div class="article-text">
               <h2 class="blog-post-title">{{post.title}}</h2>
-              <p> {{ page.date | date: "%B %-d, %Y"}} </p>
+            </div>
+            <div class="article-text col-12-bottom">
+              <p class="post-preview-date margin-bottom">{{ post.date | date: "%B %-d, %Y"}}</p>
               <p class="margin-top margin-bottom">{{post.excerpt | truncatewords: 20 }}</p>
               <a class="button-article-highlight margin-top" href="{{post.url}}">Continue reading</a>
             </div>

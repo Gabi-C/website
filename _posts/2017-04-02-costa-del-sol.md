@@ -1,11 +1,14 @@
 ---
 layout: post
-title: Trip to Costa del Sol
-description: Trip to Costa del Sol - Spain
+title: Algarve in 3 Days
+description: What to do in Algarve
 featured_image: /assets/img/bg1.jpg
 categories:
   - Travel
   - Highlight
+  - Portugal
+  - Europe
+  - Guides
 ---
 
 
