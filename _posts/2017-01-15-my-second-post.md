@@ -4,9 +4,9 @@ title: Second post
 description: My first post
 featured_image: /assets/img/IMG_3294.jpg
 categories:
-  - Featured
   - Food
   - Lifestyle
+  - Highlight
 ---
 
 

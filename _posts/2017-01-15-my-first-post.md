@@ -8,6 +8,7 @@ categories:
   - Food
   - Lifestyle
   - Morocco
+  - Highlight
 ---
 
 

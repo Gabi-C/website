@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Trip to Morocco 
+title: My Trip to Morocco
 description: All about Morocco
 featured_image: /assets/img/IMG_3294.jpg
 categories:

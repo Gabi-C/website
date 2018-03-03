@@ -5,6 +5,7 @@ description: Trip to Costa del Sol - Spain
 featured_image: /assets/img/bg1.jpg
 categories:
   - Travel
+  - Highlight
 ---
 
 
