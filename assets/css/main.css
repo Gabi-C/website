@@ -31,16 +31,16 @@ img {
   margin-top: 3rem;
 }
 
-.margin-top-xl {
-  margin-top: 8rem;
-}
-
 .margin-bottom {
-  margin:bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .margin-bottom-l {
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.margin-top-s {
+  margin-top: .8rem;
 }
 
 .margin-left {
@@ -51,16 +51,33 @@ img {
   margin-right: 2rem;
 }
 
-.padding-2 {
+.padding-2,
+[class*=grid-][class*=-noGutter]>[class*=col-].padding-2,
+[class*=grid-][class*=-noGutter]>[class~=col].padding-2 {
   padding: 2%;
 }
 
-.padding-5 {
+.padding-5,
+[class*=grid-][class*=-noGutter]>[class*=col-].padding-5,
+[class*=grid-][class*=-noGutter]>[class~=col].padding-5 {
   padding: 5%;
+}
+
+.left-border {
+  border-left: solid 1px #D3D3D3;
+}
+
+.right-border {
+  border-right: solid 1px #D3D3D3;
 }
 
 /*----------General Styles----------*/
 /*----body----*/
+
+section {
+  padding: 0 5%;
+}
+
 /*----Typography----*/
 
 h1 {
@@ -70,6 +87,15 @@ h1 {
   font-family: 'Roboto', sans-serif;
   margin: 6rem;
   margin-bottom: 0;
+}
+
+h2 {
+  text-align: left;
+  color: #202020;
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin-top: .6rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -82,21 +108,30 @@ h3 {
 
 h4 {
   color: #7C9885;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
   padding: 2%;
   margin-top: 0.5rem;
   margin-bottom: 0.2rem;
-
 }
 
 p {
   line-height: 1.2;
   color: #585858;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 }
 
 a {
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+time {
+  color: #585858;
+  font-family: 'Roboto', sans-serif;
+  font-size: .85rem;
+  text-transform: uppercase;
 }
 
 /*----------Header Styles----------*/
@@ -109,7 +144,6 @@ nav {
 
 nav ul li {
   display: inline-block;
-
 }
 
 nav a {
@@ -194,18 +228,10 @@ aside hr {
 }
 
 .image-profile {
-  background-image: url('../assets/img/profile.jpg')
+  background-image: url('../assets/img/profile.jpg');
   background-size: cover;
   background-position: center;
 }
-
-/*----------Articles Styles----------*/
-
-
-
-/*----------Footer Styles----------*/
-
-/*----------Home Page Styles----------*/
 
 input {
   display: block;
@@ -215,17 +241,7 @@ input {
   font-family: 'Roboto', sans-serif;
   width: 100%;
   padding: 2%;
-
 }
-
-.image-profile {
-  background-image: url('../assets/img/profile.jpg')
-  background-size: cover;
-  background-position: center;
-  margin-top: 0.7rem;
-
-}
-
 
 .button {
   background-color: #7C9885;
@@ -236,7 +252,83 @@ input {
   display: block;
   width: 100%;
   padding: 2%;
+}
 
+/*----------Articles Styles----------*/
 
+.image-articles {
+  background-image: url('../assets/img/img-articles.jpg')
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0.8rem;
+}
+
+.button-article {
+  background-color: white;
+  color: #7C9885;
+  border: 1px solid #D3D3D3;
+  font-size: 0.7rem;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  width: 30%;
+  padding: 2%;
+  text-transform: uppercase;
+}
+
+.button-article:hover {
+  background-color: #7C9885;
+  color: white;
+}
+
+.icons .fa-instagram {
+  font-size: 1.5rem;
+  color: #202020;
+  margin-top: .5rem;
+}
+
+/*----------Highlight Styles----------*/
+
+#highlights hr {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  outline: none;
+  border: none;
+  background-color: #D3D3D3;
+  height: 1px;
+}
+
+.highlights {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #202020;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.3%;
+}
+
+.image-hl {
+  background-image: url('../assets/img/img-hl.jpg')
+  background-size: cover;
+  background-position: center;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
 
 }
+
+.button-article-highlight {
+  background-color: white;
+  color: #7C9885;
+  border: 1px solid #D3D3D3;
+  font-size: 0.7rem;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  width: 40%;
+  padding: 2%;
+  text-transform: uppercase;
+}
+
+/*----------Footer Styles----------*/
+
+/*----------Home Page Styles----------*/
