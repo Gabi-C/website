@@ -51,6 +51,10 @@ img {
   margin-right: 2rem;
 }
 
+.padding-1 {
+  padding: 1%;
+}
+
 .padding-2,
 [class*=grid-][class*=-noGutter]>[class*=col-].padding-2,
 [class*=grid-][class*=-noGutter]>[class~=col].padding-2 {
@@ -71,11 +75,20 @@ img {
   border-right: solid 1px #D3D3D3;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 /*----------General Styles----------*/
+
 /*----body----*/
 
 section {
   padding: 0 5%;
+}
+
+.blog-post-title {
+  min-height: 4.6rem;
 }
 
 /*----Typography----*/
@@ -90,9 +103,8 @@ h1 {
 }
 
 h2 {
-  text-align: left;
   color: #202020;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Roboto', sans-serif;
   margin-top: .6rem;
   margin-bottom: 1rem;
@@ -132,6 +144,36 @@ time {
   font-family: 'Roboto', sans-serif;
   font-size: .85rem;
   text-transform: uppercase;
+}
+
+/*----------Slideshow Styles----------*/
+
+#slideshow {
+  background-image: url("../img/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#slideshow hr {
+  height: 2px;
+  background-color: green;
+  width: 80px;
+  outline: none;
+  border: none;
+  display: inline-block;
+}
+
+#slideshow h2 {
+  margin-bottom: .3rem;
+}
+
+#slideshow .button-slideshow {
+  display: block;
+}
+
+#slideshow .button-slideshow span {
+  border: 1px solid green;
+  display: inline-block;
 }
 
 /*----------Header Styles----------*/
@@ -263,6 +305,15 @@ input {
   margin-bottom: 0.8rem;
 }
 
+a.tag {
+  color: #7C9885;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .2rem .9rem .2rem 0;
+  font-size: .8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
 .button-article {
   background-color: white;
   color: #7C9885;
@@ -284,6 +335,7 @@ input {
   font-size: 1.5rem;
   color: #202020;
   margin-top: .5rem;
+  margin-bottom: .2rem;
 }
 
 /*----------Highlight Styles----------*/
@@ -314,7 +366,6 @@ input {
   background-position: center;
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
-
 }
 
 .button-article-highlight {
@@ -327,6 +378,11 @@ input {
   width: 40%;
   padding: 2%;
   text-transform: uppercase;
+}
+
+.button-article-highlight:hover {
+  background-color: #7C9885;
+  color: white;
 }
 
 /*----------Footer Styles----------*/

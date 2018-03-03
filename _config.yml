@@ -1,0 +1,17 @@
+gems:
+  - jekyll-archives
+
+categories:
+  - Travel
+  - Lifestyle
+  - Featured
+
+jekyll-archives:
+  enabled: true
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
