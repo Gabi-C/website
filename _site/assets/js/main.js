@@ -8,8 +8,6 @@ $(document).ready(function(){
   */
   function toggleMobileMenu() {
 
-      console.log('Ready');
-
     // Check if the body has the "mobile-nav-visible" class
     if ($('body').hasClass('mobile-nav-visible')) {
       $('body').removeClass('mobile-nav-visible');
@@ -19,9 +17,26 @@ $(document).ready(function(){
 
   }
 
+  /*
+  **  Prevents default link behaviour
+  */
+  function preventDefault(event) {
+
+    // Prevent default
+    event.preventDefault();
+
+  }
+
+  // Initialise Accordion
+  $('li.this-is-accordion').accordion({
+    transitionSpeed: 300,
+    transitionEasing: 'ease',
+    singleOpen: false
+  });
+
   // Bind
   $(document).on('click', '#hamburger', toggleMobileMenu);
-
+  $(document).on('click', '#mobile-navigation a.just-drop-down', preventDefault);
 });
 
 /*

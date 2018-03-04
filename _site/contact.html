@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/assets/css/vendor/normalize.8.0.0.min.css" />
     <link rel="stylesheet" href="/assets/css/vendor/gridlex.2.6.1.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/jquery.accordion.0.0.1.css" />
     <link rel="stylesheet" href="/assets/css/vendor/slider.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
 
@@ -18,22 +19,25 @@
 
   <body>
 
+    <div class="mob-header" id="hamburger">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
     <header>
-      <h1 id="hamburger">Title</h1>
+      <h1>Title</h1>
       <h3>Sub Title</h3>
       <nav>
   <ul>
     <li><a class="menu-line" href="/index.html">Home</a></li>
-    <li>
-      <a class="menu-line" href="#">Destinations</a>
-      <ul class="sub-menu">
-        <li>
+    <li class="this-is-accordion">
+      <a class="menu-line just-drop-down" href="#" data-control>Destinations</a>
+      <ul class="sub-menu" data-content>
+        <li class="menu-with-sub-menu">
           <a class="menu-line2" href="/category/africa">Africa</a>
           <ul class="sub-sub-menu">
             <li><a class="menu-line3" href="/category/morocco">Morocco</a></li>
           </ul>
         </li>
-        <li>
+        <li class="menu-with-sub-menu">
           <a class="menu-line2" href="/category/americas">Americas</a>
           <ul class="sub-sub-menu">
             <li><a class="menu-line3" href="/category/brazil">Brazil</a></li>
@@ -41,14 +45,14 @@
             <li><a class="menu-line3" href="/category/usa">USA</a></li>
           </ul>
         </li>
-        <li>
+        <li class="menu-with-sub-menu">
           <a class="menu-line2" href="/category/asia">Asia</a>
           <ul class="sub-sub-menu">
             <li><a class="menu-line3" href="/category/indonesia">Indonesia</a></li>
             <li><a class="menu-line3" href="/category/japan">Japan</a></li>
           </ul>
         </li>
-        <li>
+        <li class="menu-with-sub-menu">
           <a class="menu-line2" href="/category/europe">Europe</a>
           <ul class="sub-sub-menu">
             <li><a class="menu-line3" href="/category/germany">Germany</a>
@@ -59,12 +63,12 @@
         </li>
       </ul>
     </li>
-    <li>
-      <a class="menu-line" href="/category/travel-tips">Travel Tips</a>
-        <ul class="sub-menu">
-          <li><a class="menu-line2" href="/category/travel-tips">Travel Tips</a></li>
-          <li><a class="menu-line2" href="/category/guides">Guides</a></li>
-        </ul>
+    <li class="this-is-accordion">
+      <a class="menu-line just-drop-down" href="/category/travel-tips" data-control>Travel Tips</a>
+      <ul class="sub-menu" data-content>
+        <li><a class="menu-line2" href="/category/travel-tips">Travel Tips</a></li>
+        <li><a class="menu-line2" href="/category/guides">Guides</a></li>
+      </ul>
     </li>
     <li><a class="menu-line" href="/category/lifestyle">Lifestyle</a></li>
     <li><a class="menu-line" href="/about.html">About</a></li>
@@ -110,16 +114,16 @@
       <nav>
   <ul>
     <li><a class="menu-line" href="/index.html">Home</a></li>
-    <li>
-      <a class="menu-line" href="#">Destinations</a>
-      <ul class="sub-menu">
-        <li>
+    <li class="this-is-accordion">
+      <a class="menu-line just-drop-down" href="#" data-control>Destinations</a>
+      <ul class="sub-menu" data-content>
+        <li class="menu-with-sub-menu">
           <a class="menu-line2" href="/category/africa">Africa</a>
           <ul class="sub-sub-menu">
             <li><a class="menu-line3" href="/category/morocco">Morocco</a></li>
           </ul>
         </li>
-        <li>
+        <li class="menu-with-sub-menu">
           <a class="menu-line2" href="/category/americas">Americas</a>
           <ul class="sub-sub-menu">
             <li><a class="menu-line3" href="/category/brazil">Brazil</a></li>
@@ -127,14 +131,14 @@
             <li><a class="menu-line3" href="/category/usa">USA</a></li>
           </ul>
         </li>
-        <li>
+        <li class="menu-with-sub-menu">
           <a class="menu-line2" href="/category/asia">Asia</a>
           <ul class="sub-sub-menu">
             <li><a class="menu-line3" href="/category/indonesia">Indonesia</a></li>
             <li><a class="menu-line3" href="/category/japan">Japan</a></li>
           </ul>
         </li>
-        <li>
+        <li class="menu-with-sub-menu">
           <a class="menu-line2" href="/category/europe">Europe</a>
           <ul class="sub-sub-menu">
             <li><a class="menu-line3" href="/category/germany">Germany</a>
@@ -145,12 +149,12 @@
         </li>
       </ul>
     </li>
-    <li>
-      <a class="menu-line" href="/category/travel-tips">Travel Tips</a>
-        <ul class="sub-menu">
-          <li><a class="menu-line2" href="/category/travel-tips">Travel Tips</a></li>
-          <li><a class="menu-line2" href="/category/guides">Guides</a></li>
-        </ul>
+    <li class="this-is-accordion">
+      <a class="menu-line just-drop-down" href="/category/travel-tips" data-control>Travel Tips</a>
+      <ul class="sub-menu" data-content>
+        <li><a class="menu-line2" href="/category/travel-tips">Travel Tips</a></li>
+        <li><a class="menu-line2" href="/category/guides">Guides</a></li>
+      </ul>
     </li>
     <li><a class="menu-line" href="/category/lifestyle">Lifestyle</a></li>
     <li><a class="menu-line" href="/about.html">About</a></li>
@@ -162,6 +166,7 @@
 
     <!--JAVASCRIPT-->
     <script src="/assets/js/vendor/jquery.3.3.1.min.js"></script>
+    <script src="/assets/js/vendor/jquery.accordion.0.0.1.js"></script>
     <script src="/assets/js/vendor/slider.js"></script>
     <script src="/assets/js/main.js"></script>
 
