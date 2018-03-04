@@ -477,7 +477,7 @@ footer {
 footer div {
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 57%;
   margin-top: -28px;
 }
 
@@ -550,6 +550,7 @@ footer .fa-instagram {
 }
 
 /*----- Mobile Navigation ------*/
+
 #mobile-navigation {
   position: fixed;
   top: 0;
@@ -593,6 +594,25 @@ body.mobile-nav-visible #mobile-navigation {
 #mobile-navigation .sub-sub-menu {
   position: static;
   display: block;
+}
+
+#mobile-navigation .menu-line {
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: 0.3rem;
+}
+
+#mobile-navigation .menu-line2 {
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: .3rem;
+  margin-left: 1.5rem;
+  width: 90%;
+}
+
+#mobile-navigation .menu-line3 {
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: .3rem;
+  margin-left: 3.5rem;
+  width: 78%;
 }
 
 /*----------Media Queries----------*/
@@ -647,5 +667,4 @@ body.mobile-nav-visible #mobile-navigation {
   #mobile-navigation nav {
     display: block;
   }
-
 }
