@@ -2,25 +2,26 @@
 layout: default
 ---
 
-    <section id="slideshow" class="grid-spaceBetween-noGutter-noBottom-middle no-padding">
-      <div class="col-1 center">
-        <a href="#"><</a>
-      </div>
-      <div class="col-6 center">
-        <a href="#">Travel</a>
-        <h2>Title</h2>
-        <hr>
-        <a class="button-slideshow" href="#"><span class="padding-1">Continue Reading</span></a>
-      </div>
-      <div class="col-1 center">
-              <a href="#">></a>
+    <section id="slider" class="grid">
+      <div class="flexslider col-12 grid">
+        <ul class="slides col-12 grid">
+          {% for post in site.posts limit:2 %}
+          <li class="grid-noGutter-noBottom" style="background-image: url('{{ post.featured_image }}')">
+            <div class="slider-text center col-6" data-push-left="off-3">
+              <h2>{{post.title}}</h2>
+              <hr class="margin-top margin-bottom">
+              <a href="{{post.url}}" class="button-slider center">Continue reading</a>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </section>
 
     <section class="grid">
-      <div class="grid col-9">
+      <div class="grid col-9_xs-12">
         {% for post in site.posts limit:6 %}
-          <article class="col-6">
+          <article class="col-6_xs-12">
             <img src="{{post.featured_image}}" class="image-profile margin-top-l margin-bottom"/>
           {% if post.categories[0] != 'Highlight' %}
             <a href="/category/{{post.categories[0]}}" class="tag">{{post.categories[0]}}</a>
@@ -41,7 +42,7 @@ layout: default
           {% endfor %}
       </div>
 
-      <aside class="col-3 center">
+      <aside class="col-3_xs-12 center margin-top-l">
         <h4>About</h4>
         <hr>
         <img src="assets/img/profile.jpg" class="image-profile margin-top-s"/>
@@ -61,20 +62,20 @@ layout: default
     </section>
 
     <section id="highlights" class="grid-middle-center-noGutter-noBottom">
-      <div class="col-5 right-border">
+      <div class="col-5_xs-3 right-border">
         <hr>
         <hr>
       </div>
-      <div class="col-2">
+      <div class="col-2_xs-6">
         <p class="center highlights">Highlights</p>
       </div>
-      <div class="col-5 left-border">
+      <div class="col-5_xs-3 left-border">
         <hr>
         <hr>
       </div>
       <article class="col-12 grid padding-2">
         {% for post in site.categories.Highlight limit:3 %}
-          <article class="col-4 grid">
+          <article class="col-4_xs-12 grid">
             <div class="col-12-top">
               <img src="{{post.featured_image}}" class="image-profile margin-top margin-bottom"/>
               {% if post.categories[0] != 'Highlight' %}

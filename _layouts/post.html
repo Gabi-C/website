@@ -1,11 +1,26 @@
 ---
 layout: default
+comments: true
 ---
 
 <section class="post margin-top-l margin-bottom-xl">
-  <h2>{{post.title}}</h2>
-  <p> {{ post.date | date: "%B %-d, %Y"}} </p>
+  <h2 class="center">{{ page.title }}</h2>
+  <p class="center margin-bottom"> {{ page.date | date: "%B %-d, %Y" }} </p>
 
-    {{content}}
+  {{content}}
 
 </section>
+
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = "https://gabicicconeto.com{{ page.url }}";
+    this.page.identifier = "{{ page.id }}";
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://gabic.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>

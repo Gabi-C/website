@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/assets/css/vendor/normalize.8.0.0.min.css" />
     <link rel="stylesheet" href="/assets/css/vendor/gridlex.2.6.1.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/slider.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
 
   </head>
@@ -18,79 +19,89 @@
   <body>
 
     <header>
-      <h1>Title</h1>
+      <h1 id="hamburger">Title</h1>
       <h3>Sub Title</h3>
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li>
-            <a href="#">Destinations</a>
-            <ul class="sub-menu">
-              <li>
-                <a href="/category/africa">Africa</a>
-                <ul class="sub-sub-menu">
-                  <li><a href="/category/morocco">Morocco</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="/category/americas">Americas</a>
-                <ul class="sub-sub-menu">
-                  <li><a href="#">Brazil</a></li>
-                  <li><a href="#">Mexico</a></li>
-                  <li><a href="/category/usa">USA</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="/category/asia">Asia</a>
-                <ul class="sub-sub-menu">
-                  <li><a href="/category/indonesia">Indonesia</a></li>
-                  <li><a href="/category/japan">Japan</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="/category/europe">Europe</a>
-                <ul class="sub-sub-menu">
-                  <li><a href="/category/germany">Germany</a>
-                    <li><a href="#">Italy</a></li>
-                    <li><a href="/category/portugal">Portugal</a></li>
-                    <li><a href="/category/spain">Spain</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Travel Tips</a>
-              <ul class="sub-menu">
-                <li><a href="/category/traveltips">Travel Tips</a></li>
-                <li><a href="/category/guides">Guides</a></li>
-              </ul>
-          </li>
-          <li><a href="/category/lifestyle">Lifestyle</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li>
+      <a href="#">Destinations</a>
+      <ul class="sub-menu">
+        <li>
+          <a href="/category/africa">Africa</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/morocco">Morocco</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/americas">Americas</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/brazil">Brazil</a></li>
+            <li><a href="/category/mexico">Mexico</a></li>
+            <li><a href="/category/usa">USA</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/asia">Asia</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/indonesia">Indonesia</a></li>
+            <li><a href="/category/japan">Japan</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/europe">Europe</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/germany">Germany</a>
+              <li><a href="#">Italy</a></li>
+              <li><a href="/category/portugal">Portugal</a></li>
+              <li><a href="/category/spain">Spain</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="/category/travel-tips">Travel Tips</a>
+        <ul class="sub-menu">
+          <li><a href="/category/travel-tips">Travel Tips</a></li>
+          <li><a href="/category/guides">Guides</a></li>
         </ul>
-      </nav>
+    </li>
+    <li><a href="/category/lifestyle">Lifestyle</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
     </header>
 
-    <section id="slideshow" class="grid-spaceBetween-noGutter-noBottom-middle no-padding">
-      <div class="col-1 center">
-        <a href="#"><</a>
-      </div>
-      <div class="col-6 center">
-        <a href="#">Travel</a>
-        <h2>Title</h2>
-        <hr>
-        <a class="button-slideshow" href="#"><span class="padding-1">Continue Reading</span></a>
-      </div>
-      <div class="col-1 center">
-              <a href="#">></a>
+        <section id="slider" class="grid">
+      <div class="flexslider col-12 grid">
+        <ul class="slides col-12 grid">
+          
+          <li class="grid-noGutter-noBottom" style="background-image: url('/assets/img/bg1.jpg')">
+            <div class="slider-text center col-6" data-push-left="off-3">
+              <h2>Best places to eat tapas</h2>
+              <hr class="margin-top margin-bottom">
+              <a href="/food/spain/europe/travel_tips/2017/05/18/best-tapas.html" class="button-slider center">Continue reading</a>
+            </div>
+          </li>
+          
+          <li class="grid-noGutter-noBottom" style="background-image: url('/assets/img/IMG_3294.jpg')">
+            <div class="slider-text center col-6" data-push-left="off-3">
+              <h2>Best places to visit in California</h2>
+              <hr class="margin-top margin-bottom">
+              <a href="/usa/americas/travel/2017/05/06/california-post.html" class="button-slider center">Continue reading</a>
+            </div>
+          </li>
+          
+        </ul>
       </div>
     </section>
 
     <section class="grid">
-      <div class="grid col-9">
+      <div class="grid col-9_xs-12">
         
-          <article class="col-6">
+          <article class="col-6_xs-12">
             <img src="/assets/img/bg1.jpg" class="image-profile margin-top-l margin-bottom"/>
           
             <a href="/category/Food" class="tag">Food</a>
@@ -109,7 +120,7 @@
             </div>
           </article>
           
-          <article class="col-6">
+          <article class="col-6_xs-12">
             <img src="/assets/img/IMG_3294.jpg" class="image-profile margin-top-l margin-bottom"/>
           
             <a href="/category/USA" class="tag">USA</a>
@@ -128,7 +139,7 @@
             </div>
           </article>
           
-          <article class="col-6">
+          <article class="col-6_xs-12">
             <img src="/assets/img/IMG_3294.jpg" class="image-profile margin-top-l margin-bottom"/>
           
             <a href="/category/Travel" class="tag">Travel</a>
@@ -147,7 +158,7 @@
             </div>
           </article>
           
-          <article class="col-6">
+          <article class="col-6_xs-12">
             <img src="/assets/img/bg1.jpg" class="image-profile margin-top-l margin-bottom"/>
           
             <a href="/category/Travel" class="tag">Travel</a>
@@ -164,7 +175,7 @@
             </div>
           </article>
           
-          <article class="col-6">
+          <article class="col-6_xs-12">
             <img src="/assets/img/IMG_3294.jpg" class="image-profile margin-top-l margin-bottom"/>
           
             <a href="/category/Food" class="tag">Food</a>
@@ -181,7 +192,7 @@
             </div>
           </article>
           
-          <article class="col-6">
+          <article class="col-6_xs-12">
             <img src="/assets/img/IMG_3294.jpg" class="image-profile margin-top-l margin-bottom"/>
           
             <a href="/category/Travel" class="tag">Travel</a>
@@ -202,7 +213,7 @@
           
       </div>
 
-      <aside class="col-3 center">
+      <aside class="col-3_xs-12 center margin-top-l">
         <h4>About</h4>
         <hr>
         <img src="assets/img/profile.jpg" class="image-profile margin-top-s"/>
@@ -222,20 +233,20 @@
     </section>
 
     <section id="highlights" class="grid-middle-center-noGutter-noBottom">
-      <div class="col-5 right-border">
+      <div class="col-5_xs-3 right-border">
         <hr>
         <hr>
       </div>
-      <div class="col-2">
+      <div class="col-2_xs-6">
         <p class="center highlights">Highlights</p>
       </div>
-      <div class="col-5 left-border">
+      <div class="col-5_xs-3 left-border">
         <hr>
         <hr>
       </div>
       <article class="col-12 grid padding-2">
         
-          <article class="col-4 grid">
+          <article class="col-4_xs-12 grid">
             <div class="col-12-top">
               <img src="/assets/img/IMG_3294.jpg" class="image-profile margin-top margin-bottom"/>
               
@@ -256,7 +267,7 @@
             </div>
           </article>
           
-          <article class="col-4 grid">
+          <article class="col-4_xs-12 grid">
             <div class="col-12-top">
               <img src="/assets/img/bg1.jpg" class="image-profile margin-top margin-bottom"/>
               
@@ -275,7 +286,7 @@
             </div>
           </article>
           
-          <article class="col-4 grid">
+          <article class="col-4_xs-12 grid">
             <div class="col-12-top">
               <img src="/assets/img/IMG_3294.jpg" class="image-profile margin-top margin-bottom"/>
               
@@ -298,7 +309,7 @@
     </section>
 
 
-    <footer class="margin-top-ss">
+    <footer class="margin-top-l">
       <div class="icons center">
         <p>
           <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -306,12 +317,68 @@
         </p>
       </div>
 
-
-      <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/ed9773365d315ae7b4404010f549425b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+      <!-- Instagram WIDGET -->
+      <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+      <iframe src="//lightwidget.com/widgets/ed9773365d315ae7b4404010f549425b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
     </footer>
+
+    <div id="mobile-navigation">
+      <nav>
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li>
+      <a href="#">Destinations</a>
+      <ul class="sub-menu">
+        <li>
+          <a href="/category/africa">Africa</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/morocco">Morocco</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/americas">Americas</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/brazil">Brazil</a></li>
+            <li><a href="/category/mexico">Mexico</a></li>
+            <li><a href="/category/usa">USA</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/asia">Asia</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/indonesia">Indonesia</a></li>
+            <li><a href="/category/japan">Japan</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/europe">Europe</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/germany">Germany</a>
+              <li><a href="#">Italy</a></li>
+              <li><a href="/category/portugal">Portugal</a></li>
+              <li><a href="/category/spain">Spain</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="/category/travel-tips">Travel Tips</a>
+        <ul class="sub-menu">
+          <li><a href="/category/travel-tips">Travel Tips</a></li>
+          <li><a href="/category/guides">Guides</a></li>
+        </ul>
+    </li>
+    <li><a href="/category/lifestyle">Lifestyle</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+    </div><!-- #mobile-navigation -->
 
     <!--JAVASCRIPT-->
     <script src="/assets/js/vendor/jquery.3.3.1.min.js"></script>
+    <script src="/assets/js/vendor/slider.js"></script>
     <script src="/assets/js/main.js"></script>
 
   </body>

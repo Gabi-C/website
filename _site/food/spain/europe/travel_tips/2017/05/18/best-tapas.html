@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/assets/css/vendor/normalize.8.0.0.min.css" />
     <link rel="stylesheet" href="/assets/css/vendor/gridlex.2.6.1.min.css" />
+    <link rel="stylesheet" href="/assets/css/vendor/slider.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
 
   </head>
@@ -18,65 +19,66 @@
   <body>
 
     <header>
-      <h1>Title</h1>
+      <h1 id="hamburger">Title</h1>
       <h3>Sub Title</h3>
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li>
-            <a href="#">Destinations</a>
-            <ul class="sub-menu">
-              <li>
-                <a href="/category/africa">Africa</a>
-                <ul class="sub-sub-menu">
-                  <li><a href="/category/morocco">Morocco</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="/category/americas">Americas</a>
-                <ul class="sub-sub-menu">
-                  <li><a href="#">Brazil</a></li>
-                  <li><a href="#">Mexico</a></li>
-                  <li><a href="/category/usa">USA</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="/category/asia">Asia</a>
-                <ul class="sub-sub-menu">
-                  <li><a href="/category/indonesia">Indonesia</a></li>
-                  <li><a href="/category/japan">Japan</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="/category/europe">Europe</a>
-                <ul class="sub-sub-menu">
-                  <li><a href="/category/germany">Germany</a>
-                    <li><a href="#">Italy</a></li>
-                    <li><a href="/category/portugal">Portugal</a></li>
-                    <li><a href="/category/spain">Spain</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Travel Tips</a>
-              <ul class="sub-menu">
-                <li><a href="/category/traveltips">Travel Tips</a></li>
-                <li><a href="/category/guides">Guides</a></li>
-              </ul>
-          </li>
-          <li><a href="/category/lifestyle">Lifestyle</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li>
+      <a href="#">Destinations</a>
+      <ul class="sub-menu">
+        <li>
+          <a href="/category/africa">Africa</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/morocco">Morocco</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/americas">Americas</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/brazil">Brazil</a></li>
+            <li><a href="/category/mexico">Mexico</a></li>
+            <li><a href="/category/usa">USA</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/asia">Asia</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/indonesia">Indonesia</a></li>
+            <li><a href="/category/japan">Japan</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/europe">Europe</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/germany">Germany</a>
+              <li><a href="#">Italy</a></li>
+              <li><a href="/category/portugal">Portugal</a></li>
+              <li><a href="/category/spain">Spain</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="/category/travel-tips">Travel Tips</a>
+        <ul class="sub-menu">
+          <li><a href="/category/travel-tips">Travel Tips</a></li>
+          <li><a href="/category/guides">Guides</a></li>
         </ul>
-      </nav>
+    </li>
+    <li><a href="/category/lifestyle">Lifestyle</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
     </header>
 
-<section class="post margin-top-l margin-bottom-xl">
-  <h2></h2>
-  <p>  </p>
+    <section class="post margin-top-l margin-bottom-xl">
+  <h2 class="center">Best places to eat tapas</h2>
+  <p class="center margin-bottom"> May 18, 2017 </p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -85,8 +87,22 @@
 
 </section>
 
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = "https://gabicicconeto.com/food/spain/europe/travel_tips/2017/05/18/best-tapas.html";
+    this.page.identifier = "/food/spain/europe/travel_tips/2017/05/18/best-tapas";
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://gabic.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
 
-    <footer class="margin-top-ss">
+
+    <footer class="margin-top-l">
       <div class="icons center">
         <p>
           <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -94,12 +110,68 @@
         </p>
       </div>
 
-
-      <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/ed9773365d315ae7b4404010f549425b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+      <!-- Instagram WIDGET -->
+      <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+      <iframe src="//lightwidget.com/widgets/ed9773365d315ae7b4404010f549425b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
     </footer>
+
+    <div id="mobile-navigation">
+      <nav>
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li>
+      <a href="#">Destinations</a>
+      <ul class="sub-menu">
+        <li>
+          <a href="/category/africa">Africa</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/morocco">Morocco</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/americas">Americas</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/brazil">Brazil</a></li>
+            <li><a href="/category/mexico">Mexico</a></li>
+            <li><a href="/category/usa">USA</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/asia">Asia</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/indonesia">Indonesia</a></li>
+            <li><a href="/category/japan">Japan</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/category/europe">Europe</a>
+          <ul class="sub-sub-menu">
+            <li><a href="/category/germany">Germany</a>
+              <li><a href="#">Italy</a></li>
+              <li><a href="/category/portugal">Portugal</a></li>
+              <li><a href="/category/spain">Spain</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="/category/travel-tips">Travel Tips</a>
+        <ul class="sub-menu">
+          <li><a href="/category/travel-tips">Travel Tips</a></li>
+          <li><a href="/category/guides">Guides</a></li>
+        </ul>
+    </li>
+    <li><a href="/category/lifestyle">Lifestyle</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+    </div><!-- #mobile-navigation -->
 
     <!--JAVASCRIPT-->
     <script src="/assets/js/vendor/jquery.3.3.1.min.js"></script>
+    <script src="/assets/js/vendor/slider.js"></script>
     <script src="/assets/js/main.js"></script>
 
   </body>
