@@ -4,7 +4,7 @@ layout: default
 
 <section class="grid">
 
-  <h2 class="titles col-12 center margin-top-l margin-bottom-xl">{{page.title}}</h2>
+  <h2 class="titles col-12 center margin-top-l margin-bottom-xl">{{page.title | replace: "_",' '  }}</h2>
 
     {% for post in site.categories[page.title] %}
       <article class="col-4">
