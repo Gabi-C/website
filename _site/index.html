@@ -138,7 +138,7 @@
             <div class="article-text">
               <h2 class="blog-post-title">Best places to visit in California</h2>
               <p class="post-preview-date margin-bottom">May 6, 2017</p>
-              <p class="margin-top margin-bottom"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
+              <p class="margin-top margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
               <a class="button-article margin-top" href="/usa/americas/travel/2017/05/06/california-post.html">Continue reading</a>
             </div>
           </article>
@@ -217,7 +217,8 @@
           
       </div>
 
-      <aside class="col-3_xs-12 center margin-top-l">
+      <aside class="col-3_xs-12 center margin-top-l padding-left">
+        <hr class="first-line">
         <h4>About</h4>
         <hr>
         <img src="assets/img/profile.jpg" class="image-profile margin-top-s"/>
@@ -248,10 +249,9 @@
         <hr>
         <hr>
       </div>
-      <article class="col-12 grid padding-2">
+      <div class="col-12 grid padding-2">
         
-          <article class="col-4_xs-12 grid">
-            <div class="col-12-top">
+          <article class="col-4_xs-12">
               <img src="/assets/img/IMG_3294.jpg" class="image-profile margin-top margin-bottom"/>
               
                 <a href="/category/Travel" class="tag">Travel</a>
@@ -263,16 +263,14 @@
                 <a href="/category/Lifestyle" class="tag">Lifestyle</a>
               
               <h2 class="blog-post-title">Indonesia</h2>
-            </div>
-            <div class="article-text col-12-bottom">
+            <div class="article-text">
               <p class="post-preview-date margin-bottom">April 17, 2017</p>
               <p class="margin-top margin-bottom"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
               <a class="button-article-highlight margin-top" href="/travel/food/lifestyle/highlight/indonesia/asia/2017/04/17/first-time-indonesia.html">Continue reading</a>
             </div>
           </article>
           
-          <article class="col-4_xs-12 grid">
-            <div class="col-12-top">
+          <article class="col-4_xs-12">
               <img src="/assets/img/bg1.jpg" class="image-profile margin-top margin-bottom"/>
               
                 <a href="/category/Travel" class="tag">Travel</a>
@@ -282,16 +280,14 @@
                 <a href="/category/Portugal" class="tag">Portugal</a>
               
               <h2 class="blog-post-title">Algarve in 3 Days</h2>
-            </div>
-            <div class="article-text col-12-bottom">
+            <div class="article-text">
               <p class="post-preview-date margin-bottom">April 2, 2017</p>
               <p class="margin-top margin-bottom"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
               <a class="button-article-highlight margin-top" href="/travel/highlight/portugal/europe/guides/2017/04/02/costa-del-sol.html">Continue reading</a>
             </div>
           </article>
           
-          <article class="col-4_xs-12 grid">
-            <div class="col-12-top">
+          <article class="col-4_xs-12">
               <img src="/assets/img/IMG_3294.jpg" class="image-profile margin-top margin-bottom"/>
               
                 <a href="/category/Food" class="tag">Food</a>
@@ -301,8 +297,7 @@
               
               
               <h2 class="blog-post-title">3-Days in Munich</h2>
-            </div>
-            <div class="article-text col-12-bottom">
+            <div class="article-text">
               <p class="post-preview-date margin-bottom">January 15, 2017</p>
               <p class="margin-top margin-bottom"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut...</p>
               <a class="button-article-highlight margin-top" href="/food/lifestyle/highlight/germany/europe/2017/01/15/my-second-post.html">Continue reading</a>
@@ -310,6 +305,176 @@
           </article>
           
       </article>
+    </section>
+
+    <section class="col-12 center margin-top-l">
+
+      <meta name="description" content="map created using amCharts pixel map generator" />
+
+<!-- amCharts javascript sources -->
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+
+<!-- amCharts javascript code -->
+<script type="text/javascript">
+  AmCharts.makeChart("map",{
+      "type": "map",
+      "pathToImages": "http://www.amcharts.com/lib/3/images/",
+      "addClassNames": true,
+      "fontSize": 15,
+      "color": "#000000",
+      "projection": "mercator",
+      "backgroundAlpha": 1,
+      "backgroundColor": "rgba(255,255,255,1)",
+      "dataProvider": {
+        "map": "worldLow",
+        "getAreasFromMap": true,
+        "images": [
+          {
+            "top": 30,
+            "left": 50,
+            "width": 60,
+            "height": 30,
+          }
+        ],
+        "areas": [
+          {
+            "id": "AR",
+            "title": "Argentina",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "BR",
+            "title": "Brazil",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "CH",
+            "title": "Switzerland",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "DE",
+            "title": "Germany",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "ES",
+            "title": "Spain",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "FR",
+            "title": "France",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "GB",
+            "title": "United Kingdom",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "ID",
+            "title": "Indonesia",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "IT",
+            "title": "Italy",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "JP",
+            "title": "Japan",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "MA",
+            "title": "Morocco",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "MX",
+            "title": "Mexico",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "NL",
+            "title": "Netherlands",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "PT",
+            "title": "Portugal",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "PY",
+            "title": "Paraguay",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "US",
+            "title": "United States",
+            "color": "rgba(46,219,176,1)"
+          },
+          {
+            "id": "UY",
+            "title": "Uruguay",
+            "color": "rgba(46,219,176,1)"
+          }
+        ]
+      },
+      "balloon": {
+        "horizontalPadding": 15,
+        "borderAlpha": 0,
+        "borderThickness": 1,
+        "verticalPadding": 15
+      },
+      "areasSettings": {
+        "color": "rgba(206,206,206,1)",
+        "outlineColor": "rgba(255,255,255,1)",
+        "rollOverOutlineColor": "rgba(255,255,255,1)",
+        "rollOverBrightness": 20,
+        "selectedBrightness": 20,
+        "selectable": true,
+        "unlistedAreasAlpha": 0,
+        "unlistedAreasOutlineAlpha": 0
+      },
+      "imagesSettings": {
+        "alpha": 1,
+        "color": "rgba(206,206,206,1)",
+        "outlineAlpha": 0,
+        "rollOverOutlineAlpha": 0,
+        "outlineColor": "rgba(255,255,255,1)",
+        "rollOverBrightness": 20,
+        "selectedBrightness": 20,
+        "selectable": true
+      },
+      "linesSettings": {
+        "color": "rgba(206,206,206,1)",
+        "selectable": true,
+        "rollOverBrightness": 20,
+        "selectedBrightness": 20
+      },
+      "zoomControl": {
+        "zoomControlEnabled": true,
+        "homeButtonEnabled": false,
+        "panControlEnabled": false,
+        "right": 38,
+        "bottom": 30,
+        "minZoomLevel": 0.25,
+        "gridHeight": 100,
+        "gridAlpha": 0.1,
+        "gridBackgroundAlpha": 0,
+        "gridColor": "#FFFFFF",
+        "draggerAlpha": 1,
+        "buttonCornerRadius": 2
+      }
+    });
+</script>
+<body style="margin: 0;background-color: rgba(255,255,255,1);">
+<div id="map" style="width: 100%; height: 580px;"></div>
     </section>
 
 

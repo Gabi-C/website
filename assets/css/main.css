@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -61,6 +65,10 @@ img {
 
 .padding-1 {
   padding: 1%;
+}
+
+.padding-left {
+  padding-left: 2rem;
 }
 
 .padding-sides {
@@ -337,6 +345,10 @@ nav li:hover .sub-menu {
 
 /*----------Aside Styles----------*/
 
+.first-line {
+  margin-top: .1rem;
+}
+
 aside hr {
   outline: none;
   border: none;
@@ -417,6 +429,20 @@ a.tag {
   color: white;
 }
 
+/* -- BLOG POST --*/
+
+.post {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.post p {
+    margin-bottom: 1rem;
+}
+
+.post img {
+  margin: 0.5rem 0;
+}
 /*----------Highlight Styles----------*/
 
 #highlights {
@@ -549,6 +575,8 @@ footer .fa-instagram {
   margin-top: 3rem;
 }
 
+.blog-post-title
+
 
 /* --------- Mob-header -------*/
 
@@ -562,6 +590,8 @@ footer .fa-instagram {
 
   .mob-header {
     display: block;
+    background-color: #7C9885;
+    padding: 0.5rem;
   }
 
 }
@@ -683,7 +713,7 @@ body.mobile-nav-visible #mobile-overlay {
     font-size: 0.7rem;
     font-family: 'Roboto', sans-serif;
     display: block;
-    width: 35%;
+    width: 40%;
     padding: 2%;
     text-transform: uppercase;
   }
