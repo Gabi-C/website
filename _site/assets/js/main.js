@@ -28,14 +28,14 @@ $(document).ready(function(){
   }
 
   // Initialise Accordion
-  $('li.this-is-accordion').accordion({
+  $('#mobile-navigation li.this-is-accordion').accordion({
     transitionSpeed: 300,
     transitionEasing: 'ease',
     singleOpen: false
   });
 
   // Bind
-  $(document).on('click', '#hamburger', toggleMobileMenu);
+  $(document).on('click', '#hamburger, #mobile-overlay', toggleMobileMenu);
   $(document).on('click', '#mobile-navigation a.just-drop-down', preventDefault);
 });
 

@@ -637,6 +637,25 @@ body.mobile-nav-visible #mobile-navigation {
   width: 78%;
 }
 
+#mobile-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 0;
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+body.mobile-nav-visible #mobile-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /*----------Media Queries----------*/
 
 @media screen and (max-width:576px) {
