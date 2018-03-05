@@ -181,6 +181,10 @@ a {
   font-size: 3rem;
 }
 
+h2 a {
+  color: #202020;
+}
+
 /*----------Slideshow Styles----------*/
 
 #slider {
